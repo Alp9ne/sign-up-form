@@ -2,16 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <title>Sign Up Form</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="image">
-    <img id="background" src="background.jpg" alt="leaf-photo-Haile-West">
+  <div id="background">
+    <div id="odin">
+      <img id="odin-image" src="odin-lined.png" alt="odin-logo-lined">
+    </div>
+    <img id="back-image" src="background.jpg" alt="leaf-photo-Haile-West">
   </div>
-  <div class="">
-
+  
+  <div id="form-background">
+    <div id="text">
+      <h1>This is not a real online service! You know you need something in your life like this to help you realize your deepest dreams. Sign up now to get started.</h1>
+      <br>
+      <h1>You know you want to.</h1>
+    </div>
+    <div id="form">
+      <div id="head-text">
+        <h1>Let's do this!</h1>
+      </div>
+      <form method="post">
+        <ul id="form-fields">
+          <ul>
+            <li>
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="firstName">
+            </li>
+            <li>
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="lastName">
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email">
+            </li>
+            <li>
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="number" id="phone-number" name="phoneNumber">
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" name="password" class="error">
+              <div class="error-text">
+                * Passwords do not match
+              </div>
+            </li>
+            <li>
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input type="password" id="confirm-password" name="confirmPassword" class="error">
+            </li>
+          </ul>
+        </ul>
+      </form>
+    </div>
+    <div id="submit">
+      <div id="button-area">
+        <button type="submit">Create Account</button>
+      </div>
+      <div id="log-in">
+        <h3>Already have an account? <a href="">Log In</a></h2>
+      </div>
+    </div>
   </div>
 </body>
 </html>
